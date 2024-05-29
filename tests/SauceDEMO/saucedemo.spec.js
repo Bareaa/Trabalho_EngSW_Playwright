@@ -36,13 +36,11 @@ test('Login', async ({ page }) => {
 
 
     //add no carrinho o 1 item
-    await page.goto('https://www.saucedemo.com/inventory.html');
     await page.click('button[id="add-to-cart-sauce-labs-backpack"]');
 
     //verifica se o item foi adicionado e eh igual a 1
     await page.click('span[class="shopping_cart_badge"]');
 
-    await page.goto('https://www.saucedemo.com/cart.html');
 
     const cartQuantity = await page.textContent('div[class="cart_quantity"]');
 
@@ -72,13 +70,10 @@ test('Login_Cart_Logout', async ({ page }) => {
     await page.click('input[id="login-button"]');
 
     //add no carrinho o 1 item
-    await page.goto('https://www.saucedemo.com/inventory.html');
     await page.click('button[id="add-to-cart-sauce-labs-backpack"]');
 
     //verifica se o item foi adicionado e eh igual a 1
     await page.click('span[class="shopping_cart_badge"]');
-
-    await page.goto('https://www.saucedemo.com/cart.html');
 
     const cartQuantity = await page.textContent('div[class="cart_quantity"]');
 
@@ -89,7 +84,6 @@ test('Login_Cart_Logout', async ({ page }) => {
     }
 
 
-    await page.goto('https://www.saucedemo.com/inventory.html');
 
     await page.click('button[id="react-burger-menu-btn"]');
     await page.click('a[data-test="logout-sidebar-link"]');
