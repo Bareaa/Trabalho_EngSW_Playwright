@@ -25,16 +25,6 @@ test('Login', async ({ page }) => {
 
     // Clicar no botão de login
     await page.click('input[id="login-button"]');
-
-  // Click the get started link.
-//   await page.getByLabel('Username').fill('standard_user');
-//   await page.getByLabel('Password').fill('secret_sauce');
-//   await page.getByRole('button', { name: 'Login' }).click();
-  // Expects page to have a heading with the name of Installation.
-//   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-
-
-
     //add no carrinho o 1 item
     await page.click('button[id="add-to-cart-sauce-labs-backpack"]');
 
