@@ -1,21 +1,4 @@
-// // @ts-check
-// const { test, expect } = require('@playwright/test');
 
-// test('has title', async ({ page }) => {
-//   await page.goto('https://uol.com.br/esporte/%C2%A0');
-
-//   // Expect a title "to contain" a substring.
-//   await expect(page).toHaveTitle(/UOL/);
-// });
-
-// test('get started link', async ({ page }) => {
-//   await page.goto('https://uol.com.br/esporte/%C2%A0');
-
-//   // Click the get started link.
-//   await page.getByRole('link', { name: 'Parreira está curado do câncer, diz médico ex-seleção' }).click();
-
-//   await expect(page.getByRole('heading', { name: 'Parreira está curado do câncer, diz médico ex-seleção' })).toBeVisible();
-// });
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
